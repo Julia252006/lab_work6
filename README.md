@@ -239,14 +239,25 @@ import datetime  # import datetime module
 
 time.clock()  # Set clock start
 
-print(time.ctime()) 
-print(time.localtime().tm_year)  
-print(time.localtime().tm_yday)  
+print(time.ctime())
+print(time.localtime().tm_year) 
+print(time.localtime().tm_yday) 
 
-print (time.strftime("%d %m. %Y %H:M",time.gmtime()))
-print (datetime.datetime.strptime("25 Jun. 1983 10:15", "%d %b. %Y %H:%M"))
-# time_1 = datetime.datetime.date(datetime.datetime.now().today() - 1) 
-# datetime.timedelta(datetime.datetime.now() - time_1)  
+print(time.strftime("%d %m. %Y %H:M",time.gmtime()))
+print(datetime.datetime.strptime("25 Jun. 1983 10:15", "%d %b. %Y %H:%M"))
+time_1 = datetime.datetime.now() + datetime.timedelta(days = -1)
+now = datetime.datetime.now()
+print('Time delta', (now - time_1).days)
 
-print("Script execution time:%f4.2"%time.clock())
+print("Script execution time: %f4.2" % time.clock())
+```
+
+Brain Academy. Python Course. Laboratory Work #6.7
+
+Create a module with name my_web.py
+ that will print all inner http links inside of page http://www.i.ua/ 
+ and only from <div> block with class “news”
+
+```python 
+
 ```

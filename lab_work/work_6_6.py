@@ -11,18 +11,19 @@
 # 8. Check the difference with datime delta
 # 9. Print script execution time
 
-import time  # import time module
-import datetime  # import datetime module
+import time
+import datetime
 
-time.clock()  # Set clock start
+time.clock()
 
-print(time.ctime())  # print current time in format 'Tue May 24 14:09:17 2016’
-print(time.localtime().tm_year)  # Current time year
-print(time.localtime().tm_yday)  # Current year day
+print(time.ctime())
+print(time.localtime().tm_year)
+print(time.localtime().tm_yday)
 
 print(time.strftime("%d %m. %Y %H:M",time.gmtime()))
 print(datetime.datetime.strptime("25 Jun. 1983 10:15", "%d %b. %Y %H:%M"))
-# time_1 = datetime.datetime.date(datetime.datetime.now().today() - 1)   # Create datetime tuple with current day minus one day
-# datetime.timedelta(datetime.datetime.now() - time_1)  # Check the difference with datime delta
+time_1 = datetime.datetime.now() + datetime.timedelta(days = -1)
+now = datetime.datetime.now()
+print('Time delta', (now - time_1).days)  # Check the difference with time delta
 
-print("Script execution time:%f4.2"%time.clock())
+print("Script execution time: %f4.2" % time.clock())
