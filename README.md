@@ -229,7 +229,7 @@ Create a module with name my_time.py with next code implementation:
  6. Use time tuple convertion into string and create string line
  with next format '24 Mar 2015 12:14‘
  7. Use time convertion from string into time tuple
- and create object from string '19 Sep. 2012 10:15'
+ and create object from string '25 Jun. 1983 10:15'
  8. Check the difference with datime delta
  9. Print script execution time
 
