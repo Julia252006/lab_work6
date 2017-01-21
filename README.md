@@ -63,14 +63,14 @@ os.rmdir('Temp')
 Brain Academy. Python Course. Laboratory Work #6.3
 
 Create a module with name my_sys.py with next code implementation:
-1. Print computer platform
-2. Print installed computer python version
-3. Check and print size of string object – “abc”
-4. n variable should be received as script argument
-5. n variable default value set as 11 in case of read sys argument fail
-6. Use for loop and write every number item into system stdout flow
-7. Do not use print statement for above task
-8. In case of n%2 ==0 exit script execution with n code
+ 1. Print computer platform
+ 2. Print installed computer python version
+ 3. Check and print size of string object – “abc”
+ 4. n variable should be received as script argument
+ 5. n variable default value set as 11 in case of read sys argument fail
+ 6. Use for loop and write every number item into system stdout flow
+ 7. Do not use print statement for above task
+ 8. In case of n%2 ==0 exit script execution with n code
 
 ```python 
 import sys  # import sys module
@@ -108,18 +108,18 @@ if int(n) % 2 == 0:
 Brain Academy. Python Course. Laboratory Work #6.4
 
 Create a module with name my_argparse.py with next code implementation:
-1. Check that executable script __name__ variable is equal to “__main__”
-2. If yes print next:
-3. String 'Parcer initialized!' and variables: lang, keyword and value
-4. 3 variables are script arguments
-5. Set coding of the script as “utf8”
-6. Import argparse module
-7. Create parser object
-8. Add parser argument with key “–l”, string type, “ua” as default value 
+ 1. Check that executable script __name__ variable is equal to “__main__”
+ 2. If yes print next:
+ 3. String 'Parcer initialized!' and variables: lang, keyword and value
+ 4. 3 variables are script arguments
+ 5. Set coding of the script as “utf8”
+ 6. Import argparse module
+ 7. Create parser object
+ 8. Add parser argument with key “–l”, string type, “ua” as default value 
    and add any help string for key. Store this value into lang variable
-9. Add parser argument with key “–c”, string type, “word” as default value
+ 9. Add parser argument with key “–c”, string type, “word” as default value
    and add any help string for key. Store this value into keyword variable.
-10.Add parser argument with key “–m”, integer type, “0” as default value
+ 10. Add parser argument with key “–m”, integer type, “0” as default value
    and add any help string for key. Store this value into value variable.
    
 ```python 
@@ -162,14 +162,14 @@ if __name__ == '__main__':
 Brain Academy. Python Course. Laboratory Work #6.5
 
 Create a module with name my_shutil.py with next code implementation:
-1. Create “folder_zip’ in current working directory
-2. Create 3 files with an types of data in “folder_zip”
-3. Archive “folder_zip” contents into one zip file with name “my_zip”
-4. Copy “my_zip” into one folder above current
-5. Remove folder “folder_zip” from disk
-6. Add user prompt for checking folder state
-7. Unpack archive in current folder
-8. Print disk usage of folder were archive were copied
+ 1. Create “folder_zip’ in current working directory
+ 2. Create 3 files with an types of data in “folder_zip”
+ 3. Archive “folder_zip” contents into one zip file with name “my_zip”
+ 4. Copy “my_zip” into one folder above current
+ 5. Remove folder “folder_zip” from disk
+ 6. Add user prompt for checking folder state
+ 7. Unpack archive in current folder
+ 8. Print disk usage of folder were archive were copied
 
 
 ```python 
@@ -221,17 +221,17 @@ print(shutil.disk_usage("."))
 Brain Academy. Python Course. Laboratory Work #6.6
 
 Create a module with name my_time.py with next code implementation:
-1. Import time and datetime modules
-2. After import statement set clock count for checking script execution time
-3. Print current time in format 'Tue May 24 14:09:17 2016’
-4. Print current time year
-5.Print current time day from the year begining
-6. Use time tuple convertion into string and create string line
+ 1. Import time and datetime modules
+ 2. After import statement set clock count for checking script execution time
+ 3. Print current time in format 'Tue May 24 14:09:17 2016’
+ 4. Print current time year
+ 5. Print current time day from the year begining
+ 6. Use time tuple convertion into string and create string line
  with next format '24 Mar 2015 12:14‘
-7. Use time convertion from string into time tuple
+ 7. Use time convertion from string into time tuple
  and create object from string '19 Sep. 2012 10:15'
-8. Check the difference with datime delta
-9. Print script execution time
+ 8. Check the difference with datime delta
+ 9. Print script execution time
 
 ```python 
 import time  # import time module
@@ -239,14 +239,14 @@ import datetime  # import datetime module
 
 time.clock()  # Set clock start
 
-print(time.ctime())  # print current time in format 'Tue May 24 14:09:17 2016’
-print(time.localtime().tm_year)  # Current time year
-print(time.localtime().tm_yday)  # Current year day
+print(time.ctime()) 
+print(time.localtime().tm_year)  
+print(time.localtime().tm_yday)  
 
 print (time.strftime("%d %m. %Y %H:M",time.gmtime()))
 print (datetime.datetime.strptime("25 Jun. 1983 10:15", "%d %b. %Y %H:%M"))
-# time_1 = datetime.datetime.date(datetime.datetime.now().today() - 1)   # Create datetime tuple with current day minus one day
-# datetime.timedelta(datetime.datetime.now() - time_1)  # Check the difference with datime delta
+# time_1 = datetime.datetime.date(datetime.datetime.now().today() - 1) 
+# datetime.timedelta(datetime.datetime.now() - time_1)  
 
 print("Script execution time:%f4.2"%time.clock())
 ```
